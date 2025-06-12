@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Daily Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Daily Dashboard</h1>
+
+  <div class="container">
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="todo-list">
+      <h2>To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="todoInput" placeholder="Enter a task" />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
